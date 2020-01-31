@@ -41,8 +41,11 @@ function addListAfterKeypress(event) {
 	}
 }
 function toggleListItem(){
-	var li = document.querySelector("li");
-		li.classList.toggle("done");	
+	var li = document.querySelectorAll("li");
+	for(var i = 0; i < li.length;i++){
+		li[i].classList.toggle("done");
+	}
+			
 }
 //function to delete the already create list items
 function removeParent(e){
