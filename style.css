@@ -1,0 +1,52 @@
+.coolTitle {
+  text-align: center;
+  font-family: 'Oswald', Helvetica, sans-serif;
+  font-size: 40px;
+  transform: skewY(-10deg);
+  letter-spacing: 4px;
+  word-spacing: -8px;
+  color: tomato;
+  text-shadow: 
+    -1px -1px 0 firebrick,
+    -2px -2px 0 firebrick,
+    -3px -3px 0 firebrick,
+    -4px -4px 0 firebrick,
+    -5px -5px 0 firebrick,
+    -6px -6px 0 firebrick,
+    -7px -7px 0 firebrick,
+    -8px -8px 0 firebrick,
+    -30px 20px 40px dimgrey;
+}
+
+.done {
+  text-decoration: line-through;
+}
+h1{
+  font-family: fantasy;
+  color: darkgreen;
+}
+#first{
+color: teal;
+font-size: 20px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+li {
+  color: darkcyan ;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+button{
+  background-color: darkcyan;
+  border-radius: 20px;
+  font-size: 20px;
+  width: 200px;
+  height: 40px;
+}
+#enter{
+  color: white;
+  font-size: 20px;
+}
+button:hover{
+  background-color: lightseagreen;
+}
