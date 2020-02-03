@@ -11,7 +11,7 @@ function createListElement() {
 	var li = document.createElement("li");
 	li.appendChild(document.createTextNode(input.value));
 	ul.appendChild(li);
-	input.value = "";
+	input.value = "";//to clear input after enter
 //Create a delete link tag 
 	var link = document.createElement("i");
 	link.className = 'delete-item secondary-content';
@@ -35,6 +35,7 @@ function addListAfterClick() {
 	}
 }
 
+//funtion adds an item after the enter ky is pressed
 function addListAfterKeypress(event) {
 	if (inputLength() > 0 && event.keyCode === 13) {
 		createListElement();
@@ -43,7 +44,10 @@ function addListAfterKeypress(event) {
 function toggleListItem(){
 	var li = document.querySelectorAll("li");
 	for(var i = 0; i < li.length;i++){
-		li[i].classList.toggle("done");
+		li[i].addEventListener("click", function() {
+			this.classList.toggle("done");	
+		})
+	
 	}
 			
 }
